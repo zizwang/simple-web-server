@@ -36,6 +36,9 @@ void response(int clifd) {
             buf[i] = 0;
             break;
         }
+
+    chdir("./webpage");
+
     write(clifd, content, strlen(content));
     for (i = 0; i < FILESIZE; ++i) {
         buflen = strlen(buf);
