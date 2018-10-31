@@ -1,7 +1,5 @@
-fork:
+all:
 	gcc -o fork fork.c
-
-select:
 	gcc -o select select.c
 
 clean:
